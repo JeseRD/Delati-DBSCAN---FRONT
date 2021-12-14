@@ -26,7 +26,6 @@ export const Formulario = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         setLoading(true);
-        // console.log({ query, eps, min_samples });
         const res = await fetch(`${API}/dbscan_model`, {
             method: 'POST',
             headers: {
@@ -40,18 +39,23 @@ export const Formulario = () => {
         })
         const data = await res.json()
         setDataRes(data.data)
-        console.log(dataRes)
+        //console.log("La hora sad :,v")
+        //console.log(dataRes)
+        //console.log(data.data)
+        //console.log("Laura sad :,v")
         setImageDbscan(data.graphic_dbscan)
         setImageCodo(data.graphic_method_codo)
         setMetricas(data.metricas)
+        console.log(metricas)
         setMetricasDetalles(data.metricas_detalles)
+        console.log(metricas_detalles)
 
         //ORDENAMOS LA LISTA METRICAS DETALLES
         listaOrdenada(data.metricas_detalles)
 
-        setNumColumn(data.numColumn)
-
-        console.log(numColumn)
+        setNumColumn(data.numColumn.sort())
+        //console.log(data.numColumn)
+        //console.log(numColumn)
 
         setload(false)
 

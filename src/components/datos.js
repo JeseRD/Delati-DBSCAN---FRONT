@@ -20,17 +20,18 @@ export class Datos extends Component {
                 <table className="table table-striped table-bordered table-sm" style={tablescroll}>
                     <thead style={theadfix} className="table-dark">
                         <tr>
-                            {this.props.numColumn.map((columna,i) => {
-                                return  (  <th>Campo {i+1}</th>)      
+                            {this.props.numColumn.map((columna) => {
+                                return  (  <th>{Object.values(columna)}</th>)      
                             })}
                         </tr>
                     </thead>
                     <tbody>
                         {this.props.data.map((element) => (
                             <tr>
-                                {Object.values(element).map((objeto)=>(
-                                    <td>{objeto}</td> 
-                                ))}  
+                                {Object.values(element).map((objeto)=>{
+                                    //console.log(objeto)
+                                   return ( <td>{objeto}</td> )
+                            })}  
                             </tr>
                         ))
                         }
