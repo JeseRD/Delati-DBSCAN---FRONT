@@ -53,7 +53,7 @@ export const Formulario = () => {
         //ORDENAMOS LA LISTA METRICAS DETALLES
         listaOrdenada(data.metricas_detalles)
 
-        setNumColumn(data.numColumn.sort())
+        setNumColumn(data.numColumn)
         //console.log(data.numColumn)
         //console.log(numColumn)
 
