@@ -122,28 +122,31 @@ export const Formulario = () => {
             {/* NAV TAB */}
 
             <ul className="nav nav-tabs nav-justified mb-3" id="ex1" role="tablist">
+
                 <li className="nav-item" role="presentation">
                     <a
                         className="nav-link active"
-                        id="ex3-tab-1"
-                        data-mdb-toggle="tab"
-                        href="#ex3-tabs-1"
-                        role="tab"
-                        aria-controls="ex3-tabs-1"
-                        aria-selected="true"
-                    >Gráficos</a>
-                </li>
-                <li className="nav-item" role="presentation">
-                    <a
-                        className="nav-link"
                         id="ex3-tab-2"
                         data-mdb-toggle="tab"
                         href="#ex3-tabs-2"
                         role="tab"
                         aria-controls="ex3-tabs-2"
-                        aria-selected="false"
+                        aria-selected="true"
                     >Métricas</a>
                 </li>
+
+                <li className="nav-item" role="presentation">
+                    <a
+                        className="nav-link"
+                        id="ex3-tab-1"
+                        data-mdb-toggle="tab"
+                        href="#ex3-tabs-1"
+                        role="tab"
+                        aria-controls="ex3-tabs-1"
+                        aria-selected="false"
+                    >Gráficos</a>
+                </li>
+                
                 <li className="nav-item" role="presentation">
                     <a
                         className="nav-link"
@@ -159,16 +162,9 @@ export const Formulario = () => {
             
 
             <div className="tab-content" id="ex2-content">
+
                 <div
                     className="tab-pane fade show active"
-                    id="ex3-tabs-1"
-                    role="tabpanel"
-                    aria-labelledby="ex3-tab-1"
-                >
-                    <Image hidden={isload} dbscan={image_dbscan} codomethod={image_codo}></Image>
-                </div>
-                <div
-                    className="tab-pane fade"
                     id="ex3-tabs-2"
                     role="tabpanel"
                     aria-labelledby="ex3-tab-2"
@@ -177,6 +173,16 @@ export const Formulario = () => {
                         <Metrics metricas={metricas} metricas_detalles={metricas_detalles}></Metrics>
                     </div>
                 </div>
+
+                <div
+                    className="tab-pane fade"
+                    id="ex3-tabs-1"
+                    role="tabpanel"
+                    aria-labelledby="ex3-tab-1"
+                >
+                    <Image hidden={isload} dbscan={image_dbscan} codomethod={image_codo}></Image>
+                </div>
+                
                 <div
                     className="tab-pane fade"
                     id="ex3-tabs-3"
