@@ -29,7 +29,7 @@ export const Formulario = () => {
         const res = await fetch(`${API}/dbscan_model`, {
             method: 'POST',
             headers: {
-                'content-type': 'application/json'
+                'Accept': 'application/json'
             },
             body: JSON.stringify({
                 query,
