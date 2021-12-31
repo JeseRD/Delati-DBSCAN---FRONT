@@ -77,8 +77,7 @@ export const Formulario = () => {
                 <div className="form-group row"> 
                 <label className="form-label " for="query">Query</label>
                     <textarea
-                        className="form-control "
-                        placeholder="select o.htitulo, f_dimPuestoEmpleo(o.id_oferta,7) as funciones, f_dimPuestoEmpleo(o.id_oferta,1) as conocimiento, f_dimPuestoEmpleo(o.id_oferta,3) as competencias, f_dimPuestoEmpleo(o.id_oferta,2) as habilidades, f_dimPuestoEmpleo(o.id_oferta,5) as beneficio from webscraping w inner join oferta o on (w.id_webscraping=o.id_webscraping) where o.id_estado is null;"
+                        className="form-control "                        
                         rows="4"
                         type="text"
                         onChange={e => setQuery(e.target.value)}
