@@ -105,7 +105,7 @@ export const Formulario = () => {
                     <input
                         id="samples"
                         className="form-control"
-                        type="number" min="1" max="10"
+                        type="number" min="1" max="40"
                         onChange={e => setSamples(e.target.value)}
                         value={min_samples}
                     />
