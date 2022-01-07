@@ -94,7 +94,7 @@ export const Formulario = () => {
                     <input
                         id="eps"
                         className="form-control"
-                        type="number" min="0.3" max="0.9" step="0.1"
+                        type="number"
                         onChange={e => setEps(e.target.value)}
                         value={eps}
                     />
@@ -106,7 +106,7 @@ export const Formulario = () => {
                     <input
                         id="samples"
                         className="form-control"
-                        type="number" min="1" max="40"
+                        type="number"
                         onChange={e => setSamples(e.target.value)}
                         value={min_samples}
                     />
