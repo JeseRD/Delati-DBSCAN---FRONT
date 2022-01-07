@@ -36,7 +36,7 @@ export const Formulario = () => {
                 eps,
                 min_samples
             }),
-            cache: "no-store"
+            cache: "no-cache"
         })
         const data = await res.json()
         setDataRes(data.data)
