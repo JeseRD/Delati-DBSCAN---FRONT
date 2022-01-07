@@ -36,7 +36,7 @@ export const Formulario = () => {
                 eps,
                 min_samples
             }),
-            mode: "no-cors",
+            mode: "same-origin",
             cache: "no-cache"
         })
         const data = await res.json()
