@@ -26,7 +26,6 @@ export const Formulario = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         setLoading(true);
-        let controller = new AbortController();
         const res = await fetch(`${API}/dbscan_model`, {
             method: 'POST',
             headers: {
@@ -38,7 +37,7 @@ export const Formulario = () => {
                 min_samples
             }),
             cache: "no-store",
-            signal: controller.signal
+            mode: "no-cors"
         })
         const data = await res.json()
         setDataRes(data.data)
