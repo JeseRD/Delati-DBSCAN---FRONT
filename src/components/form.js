@@ -36,7 +36,7 @@ export const Formulario = () => {
                 eps,
                 min_samples
             }),
-            mode: "no-cors",
+            //mode: "no-cors",
             cache: "no-store"
 
         })
