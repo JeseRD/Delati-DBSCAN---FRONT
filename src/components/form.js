@@ -26,7 +26,7 @@ export const Formulario = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         setLoading(true);
-        const res = await fetch(`${API}/dbscan_model/allow-cors`, {
+        const res = await fetch(`${API}/dbscan_model`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -37,7 +37,8 @@ export const Formulario = () => {
                 min_samples
             }),
             mode: "cors",
-            cache: "no-store"
+            cache: "no-store",
+            credentials: "include"
         })
         const data = await res.json()
         setDataRes(data.data)
