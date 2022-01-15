@@ -31,9 +31,10 @@ export const Metrics = (props) => {
                     <tbody>
                         {props.metricas_detalles.map((element) => (
                             <tr>
-                                <td>{element.clusters+1}</td>
+                                <td>{element.clusters}</td>
                                 <td>{element.cantidad}</td>
-                                <td>{parseFloat(element.porcentaje *100)} %</td>
+                                <td>{element.porcentaje *100} %</td>
+                                {/*<td>{parseFloat(element.porcentaje *100)} %</td>*/}
                             </tr>
                         ))}
                     </tbody>
@@ -46,7 +47,7 @@ export const Metrics = (props) => {
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item">{`Coeficiente de silueta: ${props.metricas.Coefficient}`}</li>
                     <li className="list-group-item">{`Clusters: ${props.metricas.n_clusters}`}</li>
-                    <li className="list-group-item">{`Outliers: ${props.metricas.n_noise}`}</li>
+                    <li className="list-group-item">{`Outliers: ${props.metricas.n_noise}`}{` (${props.metricas.n_noise_porcentaje*100}`}%)</li>                    
                 </ul>
             </div>
         </div>

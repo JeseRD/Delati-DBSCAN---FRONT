@@ -14,13 +14,13 @@ export const Sidebar = () => {
                         <a className="list-group-item list-group-item-action list-group-item-light p-3">
                             <Link to="/"> DBSCAN </Link>
                        </a>
-                        <a className="list-group-item list-group-item-action list-group-item-light p-3">
+                       {/* <a className="list-group-item list-group-item-action list-group-item-light p-3">
                             <Link to="/kmeans"> Kmeans</Link>
                         </a>
                     
                         <a className="list-group-item list-group-item-action list-group-item-light p-3">
                             <Link to="/jerarquico"> Jerárquico</Link>
-                        </a>
+                        </a>*/}
                     
                 </div>
             </div>

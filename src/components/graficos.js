@@ -9,9 +9,9 @@ export const Image = (props) => {
                 <div className="col md-4 mt-3" >
                     <img className="img-thumbnail img-rounded" src={`data:image/png;base64,${props.dbscan}`} alt="Gráfica DBSCAN"></img>
                 </div>
-                <div className="col md-4 mt-3" >
+                {/*<div className="col md-4 mt-3" >
                     <img className="img-thumbnail img-rounded" src={`data:image/png;base64,${props.codomethod}`} alt="Gráfica Método Codo"></img>
-                </div>
+                </div>*/}
             </div>
         </div>
     )

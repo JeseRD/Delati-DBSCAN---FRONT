@@ -36,9 +36,7 @@ export const Formulario = () => {
                 eps,
                 min_samples
             }),
-            //mode: "no-cors",
             cache: "no-store"
-
         })
         const data = await res.json()
         setDataRes(data.data)
@@ -95,7 +93,7 @@ export const Formulario = () => {
                     <input
                         id="eps"
                         className="form-control"
-                        type="number"
+                        type="number" min="0.1" max="35.5" step="0.1"
                         onChange={e => setEps(e.target.value)}
                         value={eps}
                     />
@@ -107,7 +105,7 @@ export const Formulario = () => {
                     <input
                         id="samples"
                         className="form-control"
-                        type="number"
+                        type="number" min="5" max="500"
                         onChange={e => setSamples(e.target.value)}
                         value={min_samples}
                     />
