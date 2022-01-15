@@ -17,7 +17,7 @@ export class Datos extends Component {
         }
         return (
             <div className="table-responsive" style={{ width: "100%", height:"100%" }}>
-                <table className="table table-striped table-bordered table-sm" style={tablescroll}>
+                <table className="table table-striped table-bordered table-sm" style={{tablescroll,height:"100%"}}>
                     <thead style={theadfix} className="table-dark">
                         <tr>
                             {this.props.numColumn.map((columna) => {
