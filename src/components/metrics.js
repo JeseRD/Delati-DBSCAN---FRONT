@@ -40,7 +40,7 @@ export const Metrics = (props) => {
                     </tbody>
                 </table>
             </div>
-            <div className="card col" style={{ width: "100%", height:"100%" }}>
+            <div className="card col" style={{ width: "100%"}}>
                 <div className="card-header ">
                     Métricas
                 </div>
