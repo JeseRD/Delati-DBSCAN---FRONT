@@ -5,7 +5,7 @@ export class Datos extends Component {
     render() {
         const tablescroll = {
             position: 'relative',
-            height: '300px',
+            height: '1000px',
             overflow: 'auto',
             display: 'block',
             fontSize: '12px'
@@ -16,8 +16,8 @@ export class Datos extends Component {
             left: '0',
         }
         return (
-            <div className="table-responsive" style={{ width: "100%"}}>
-                <table className="table table-striped table-bordered table-sm" style={{tablescroll,height:"1000px"}}>
+            <div className="table-responsive">
+                <table className="table table-striped table-bordered table-sm" style={{tablescroll}}>
                     <thead style={theadfix} className="table-dark">
                         <tr>
                             {this.props.numColumn.map((columna) => {
