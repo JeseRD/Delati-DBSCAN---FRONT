@@ -16,7 +16,7 @@ export class Datos extends Component {
             left: '0',
         }
         return (
-            <div className="table-responsive" style={{ width: "100%", height:"100%" }}>
+            <div className="table-responsive" style={{ width: "100%"}}>
                 <table className="table table-striped table-bordered table-sm" style={{tablescroll,height:"1000px"}}>
                     <thead style={theadfix} className="table-dark">
                         <tr>
