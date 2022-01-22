@@ -14,8 +14,8 @@ export const Sidebar = () => {
                         <a className="list-group-item list-group-item-action list-group-item-light p-3">
                             <Link to="/"> DBSCAN </Link>
                        </a>
-                       <a className="list-group-item list-group-item-action list-group-item-light p-3">
-                            <Link to="https://delati.netlify.app/"> KMEANS </Link>
+                       <a className="list-group-item list-group-item-action list-group-item-light p-3" href="https://delati.netlify.app/">
+                            KMEANS
                        </a>
                        {/* <a className="list-group-item list-group-item-action list-group-item-light p-3">
                             <Link to="/kmeans"> Kmeans</Link>
