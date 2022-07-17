@@ -111,7 +111,7 @@ export const Formulario = () => {
                     />
                     
                 </div>
-                <button type="submit" className="btn btn-primary btn-block mb-4 mt-4">Realizar Consulta</button>
+                <button type="submit" className="btn btn-primary btn-block mb-4 mt-4">Enviar</button>
             </form>
 
 
